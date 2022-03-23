@@ -55,7 +55,7 @@ async function detect() {
 }
 
 function loadLabeledImages() {
-  const labels = ['Wim', 'Jonas'];
+  const labels = ['Wim', 'Jonas', 'Serge'];
   return Promise.all(
     labels.map(async (label) => {
       const img = await faceapi.fetchImage(`./images/${label}.jpg`);
